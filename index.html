@@ -1,221 +1,33 @@
-{\rtf1\ansi\ansicpg1252\cocoartf2761
-\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\froman\fcharset0 Times-Roman;}
-{\colortbl;\red255\green255\blue255;\red255\green255\blue255;\red0\green0\blue0;}
-{\*\expandedcolortbl;;\cssrgb\c100000\c100000\c100000;\cssrgb\c0\c0\c0;}
-\margl1440\margr1440\vieww11520\viewh8400\viewkind0
-\deftab720
-\pard\pardeftab720\partightenfactor0
-
-\f0\fs24 \cf0 \cb2 \expnd0\expndtw0\kerning0
-\outl0\strokewidth0 \strokec3 html_content = '''<!DOCTYPE html>\
-<html lang="en">\
-<head>\
-    <meta charset="UTF-8">\
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">\
-    <title>Leaf & Loft - Premium Faux Olive Trees | Crafted for Compliments</title>\
-    <meta name="description" content="Transform your space with Leaf & Loft's premium faux olive trees. Lifelike beauty, zero maintenance. Available in 6ft and 7ft sizes.">\
-    <script src="https://unpkg.com/react@17/umd/react.production.min.js"></script>\
-    <script src="https://unpkg.com/react-dom@17/umd/react-dom.production.min.js"></script>\
-    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>\
-    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">\
-    <style>\
-        body \{\
-            margin: 0;\
-            padding: 0;\
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', sans-serif;\
-        \}\
-        .font-serif \{\
-            font-family: Georgia, 'Times New Roman', serif;\
-        \}\
-    </style>\
-</head>\
-<body>\
-    <div id="root"></div>\
-    \
-    <script type="text/babel">\
-        function App() \{\
-            const [selectedSize, setSelectedSize] = React.useState('6ft');\
-            \
-            return (\
-                <div className="min-h-screen bg-stone-50">\
-                    \{/* Header */\}\
-                    <header className="bg-white shadow-sm">\
-                        <div className="max-w-6xl mx-auto px-4 py-6 flex justify-center">\
-                            <div className="text-center">\
-                                <img src="SVG File_LOGO C6.png" alt="Leaf & Loft Logo" className="h-16 mx-auto" />\
-                            </div>\
-                        </div>\
-                    </header>\
-\
-                    \{/* Hero Section */\}\
-                    <section className="max-w-6xl mx-auto px-4 py-16">\
-                        <div className="grid md:grid-cols-2 gap-12 items-center">\
-                            <div>\
-                                <h1 className="text-5xl font-serif text-stone-800 mb-6">\
-                                    Bring Nature's Elegance Indoors\
-                                </h1>\
-                                <p className="text-xl text-stone-600 mb-4">\
-                                    Premium Faux Olive Trees\
-                                </p>\
-                                <p className="text-lg text-stone-600 mb-8 leading-relaxed">\
-                                    Transform your space with our lifelike olive trees. Crafted for compliments, designed to spark conversation and connection.\
-                                </p>\
-                                <div className="flex gap-4 mb-8">\
-                                    <button\
-                                        onClick=\{() => setSelectedSize('6ft')\}\
-                                        className=\{`px-6 py-3 rounded-lg font-medium transition $\{\
-                                            selectedSize === '6ft'\
-                                                ? 'bg-stone-700 text-white'\
-                                                : 'bg-white text-stone-700 border-2 border-stone-300'\
-                                        \}`\}\
-                                    >\
-                                        6 Feet Tree\
-                                    </button>\
-                                    <button\
-                                        onClick=\{() => setSelectedSize('7ft')\}\
-                                        className=\{`px-6 py-3 rounded-lg font-medium transition $\{\
-                                            selectedSize === '7ft'\
-                                                ? 'bg-stone-700 text-white'\
-                                                : 'bg-white text-stone-700 border-2 border-stone-300'\
-                                        \}`\}\
-                                    >\
-                                        7 Feet Tree\
-                                    </button>\
-                                </div>\
-                                <a\
-                                    href="https://www.amazon.com/dp/B0DVDP1YY3?th=1"\
-                                    target="_blank"\
-                                    rel="noopener noreferrer"\
-                                    className="inline-block bg-amber-600 hover:bg-amber-700 text-white px-8 py-4 rounded-lg text-lg font-semibold transition shadow-lg"\
-                                >\
-                                    Shop on Amazon\
-                                </a>\
-                            </div>\
-                            <div>\
-                                <img src="1.png" alt="Leaf & Loft Olive Tree in Living Room" className="rounded-lg shadow-2xl w-full" />\
-                            </div>\
-                        </div>\
-                    </section>\
-\
-                    \{/* Features Section */\}\
-                    <section className="bg-white py-16">\
-                        <div className="max-w-6xl mx-auto px-4">\
-                            <h2 className="text-4xl font-serif text-stone-800 text-center mb-12">\
-                                Why Choose Leaf & Loft?\
-                            </h2>\
-                            <div className="grid md:grid-cols-3 gap-8">\
-                                <div className="text-center p-6">\
-                                    <div className="w-16 h-16 bg-stone-100 rounded-full flex items-center justify-center mx-auto mb-4">\
-                                        <span className="text-3xl">\uc0\u55356 \u57151 </span>\
-                                    </div>\
-                                    <h3 className="text-xl font-semibold text-stone-800 mb-3">Lifelike Beauty</h3>\
-                                    <p className="text-stone-600">\
-                                        Meticulously crafted to capture the authentic look of Mediterranean olive trees\
-                                    </p>\
-                                </div>\
-                                <div className="text-center p-6">\
-                                    <div className="w-16 h-16 bg-stone-100 rounded-full flex items-center justify-center mx-auto mb-4">\
-                                        <span className="text-3xl">\uc0\u10024 </span>\
-                                    </div>\
-                                    <h3 className="text-xl font-semibold text-stone-800 mb-3">Zero Maintenance</h3>\
-                                    <p className="text-stone-600">\
-                                        All the elegance, none of the upkeep. No watering, pruning, or sunlight needed\
-                                    </p>\
-                                </div>\
-                                <div className="text-center p-6">\
-                                    <div className="w-16 h-16 bg-stone-100 rounded-full flex items-center justify-center mx-auto mb-4">\
-                                        <span className="text-3xl">\uc0\u55356 \u57313 </span>\
-                                    </div>\
-                                    <h3 className="text-xl font-semibold text-stone-800 mb-3">Easy Assembly</h3>\
-                                    <p className="text-stone-600">\
-                                        Simple 4-step setup. Shape branches to your preference for a natural look\
-                                    </p>\
-                                </div>\
-                            </div>\
-                        </div>\
-                    </section>\
-\
-                    \{/* Product Showcase */\}\
-                    <section className="max-w-6xl mx-auto px-4 py-16">\
-                        <div className="grid md:grid-cols-2 gap-8">\
-                            <img src="2.png" alt="Leaf & Loft Product Showcase" className="rounded-lg shadow-lg w-full" />\
-                            <div className="flex flex-col justify-center">\
-                                <h2 className="text-3xl font-serif text-stone-800 mb-6">\
-                                    Crafted for Compliments\
-                                </h2>\
-                                <p className="text-stone-600 mb-4 leading-relaxed">\
-                                    At Leaf & Loft, we are a family-owned business rooted in a love for nature. Our journey began with an African childhood, where the beauty of the outdoors shaped our sense of home.\
-                                </p>\
-                                <p className="text-stone-600 mb-4 leading-relaxed">\
-                                    Now in North America, we bring that natural wonder indoors with our curated collection of nature-inspired home d\'e9cor.\
-                                </p>\
-                                <p className="text-stone-600 leading-relaxed">\
-                                    Each piece celebrates the elegance of nature, adding warmth and charm to your space while sparking conversation and connection.\
-                                </p>\
-                            </div>\
-                        </div>\
-                    </section>\
-\
-                    \{/* Assembly Guide */\}\
-                    <section className="bg-stone-100 py-16">\
-                        <div className="max-w-4xl mx-auto px-4">\
-                            <h2 className="text-4xl font-serif text-stone-800 text-center mb-12">\
-                                Simple Assembly\
-                            </h2>\
-                            <img src="3.png" alt="Assembly Instructions" className="rounded-lg shadow-lg mx-auto w-full max-w-3xl" />\
-                        </div>\
-                    </section>\
-\
-                    \{/* CTA Section */\}\
-                    <section className="bg-stone-800 text-white py-16">\
-                        <div className="max-w-4xl mx-auto px-4 text-center">\
-                            <h2 className="text-4xl font-serif mb-6">\
-                                Transform Your Space Today\
-                            </h2>\
-                            <p className="text-xl mb-8 text-stone-200">\
-                                Join families across North America who have discovered the joy of Leaf & Loft\
-                            </p>\
-                            <a\
-                                href="https://www.amazon.com/dp/B0DVDP1YY3?th=1"\
-                                target="_blank"\
-                                rel="noopener noreferrer"\
-                                className="inline-block bg-amber-600 hover:bg-amber-700 text-white px-10 py-5 rounded-lg text-xl font-semibold transition shadow-lg"\
-                            >\
-                                Shop Now on Amazon\
-                            </a>\
-                        </div>\
-                    </section>\
-\
-                    \{/* Footer */\}\
-                    <footer className="bg-white py-8">\
-                        <div className="max-w-6xl mx-auto px-4 text-center">\
-                            <img src="SVG File_LOGO C6.png" alt="Leaf & Loft" className="h-12 mx-auto mb-4" />\
-                            <p className="text-stone-600 text-xs tracking-widest">\
-                                CRAFTED FOR COMPLIMENTS\
-                            </p>\
-                        </div>\
-                    </footer>\
-                </div>\
-            );\
-        \}\
-\
-        ReactDOM.render(<App />, document.getElementById('root'));\
-    </script>\
-</body>\
-</html>'''\
-\
-# Save the HTML file\
-with open('/tmp/index.html', 'w', encoding='utf-8') as f:\
-    f.write(html_content)\
-\
-print("\uc0\u9989  index.html file created successfully!")\
-print("\\nFile saved to: /tmp/index.html")\
-print("\\n\uc0\u55357 \u56523  Next steps:")\
-print("1. Download this index.html file")\
-print("2. Place it in a folder with your 4 image files:")\
-print("   - 1.png")\
-print("   - 2.png")\
-print("   - 3.png")\
-print("   - SVG File_LOGO C6.png")\
-print("3. Upload all files to GitHub")\
-print("4. Enable GitHub Pages")}
+html_content = '''<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leaf & Loft - Premium Faux Olive Trees | Crafted for Compliments</title>
+    <meta name="description" content="Transform your space with Leaf & Loft's premium faux olive trees. Lifelike beauty, zero maintenance. Available in 6ft and 7ft sizes.">
+    <script src="https://unpkg.com/react@17/umd/react.production.min.js"></script>
+    <script src="https://unpkg.com/react-dom@17/umd/react-dom.production.min.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', sans-serif;
+        }
+        .font-serif {
+            font-family: Georgia, 'Times New Roman', serif;
+        }
+    </style>
+</head>
+<body>
+    <div id="root"></div>
+    
+    <script type="text/babel">
+        function App() {
+            const [selectedSize, setSelectedSize] = React.useState('6ft');
+            
+            return (
+                <div className="min-h-screen bg-stone-50">
+                    {/* Header */}
+                    <header className="bg-white shadow-sm">
